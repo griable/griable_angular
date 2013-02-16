@@ -1,9 +1,12 @@
-#Portfolio on top of AngularJS, with brunch.io for compiling SASS/COMPASS files
+# My simple portfolio
 
-## Build
+Built on top of AngularJS with COMPASS / Coffeescript syntax.
+Brunch.io is in charge of the compilation.
+
+## To build the project
 > brunch build
 
-## Work on the project
+## To work on the project (and start a server)
 > brunch w --s
 
 Special thank to Ludovic Enault for the design.
