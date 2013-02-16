@@ -10,7 +10,6 @@ App.config(['$routeProvider', ($routeProvider) ->
 
     $routeProvider
       .when('/', {templateUrl: '/views/partials/home.html'})
-      .when('/test', {templateUrl: '/views/partials/home.html'})
 
 ])
 
