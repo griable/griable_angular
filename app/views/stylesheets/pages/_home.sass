@@ -1,0 +1,46 @@
+$home-background: 'home-background.png'
+$image-height: image-height($home-background)
+#home
+  +stretch(image-height('logo.png') + 24px, 0, 0, 0)
+  min-height: 845px
+  div.content
+    +container()
+    position: relative
+    height: 100%
+    overflow: hidden
+
+    div#page-header
+      +stretch(0, 0, $image-height, 0)
+      > div
+        display: table
+        height: 100%
+        h1
+          +title-font
+          height: 100%
+          display: table-cell
+          vertical-align: middle
+
+    div.sum-up
+      +stretch(auto, 0, 10px, 0)
+      height: $image-height
+      background:
+        image: image-url($home-background)
+        repeat: no-repeat
+        position: right bottom
+      p
+        +base-font
+        font-size: (22em/16)
+        width: 500px
+        line-height: (28em/16)
+
+      ul.skills
+        position: absolute
+        bottom: 200px
+        li
+          +inline-block
+          float: left
+          margin:
+            right: 30px
+            bottom: 30px
+          &:nth-child(3)
+            clear: left

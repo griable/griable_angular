@@ -1,0 +1,26 @@
+@import compass/css3/font-face
+
+// Helvetica Neue Thin
+@include font-face("Helvetica Neue Thin", font-files("helvetica_neue_thin.ttf", "helvetica_neue_thin.woff", "helvetica_neue_thin.eot", "helvetica_neue_thin.svg"))
+// Source Sans Pro
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200)
+
+@mixin base-font
+  font:
+    family: 'Source Sans Pro', sans-serif
+    weight: 200
+
+@mixin title-font
+  font:
+    family: 'Helvetica Neue Thin', sans-serif
+    size: 70px
+    weight: 200
+
+@mixin intermediate-font
+  font:
+    family: "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif
+    weight: 300
+    stretch: normal
+
+body
+  +base-font

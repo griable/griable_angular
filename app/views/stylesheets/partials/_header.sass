@@ -1,0 +1,23 @@
+$logo-filename: 'logo.png'
+header
+  border-top: 5px solid black
+  div
+    +container()
+    position: relative // for the logo's position
+    height: image-height($logo-filename) + 24px
+    .logo
+      display: block
+      $logo-filename: 'logo.png'
+      +border-bottom-radius(5px)
+      width: image-width($logo-filename)
+      height: image-height($logo-filename)
+      padding: 12px 20px
+      background: 
+        color: black
+        image: image-url($logo-filename)
+        repeat: no-repeat
+        position: center 8px
+
+      position: absolute
+      top: 0
+      right: 0

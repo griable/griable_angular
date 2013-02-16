@@ -1,0 +1,11 @@
+doctype 5
+html(lang='en', ng-app='app')
+  head
+    title= 'Gabriel Slama'
+    script(src='/javascripts/vendor.js')
+    script(src='/javascripts/app.js')
+    script= "require('app');"
+    link(href="/stylesheets/app.css", media="screen, projection", rel="stylesheet", type="text/css")
+  body
+    header(ng-include, src="'/views/partials/nav.html'")
+    section(ng-view, id="home")
